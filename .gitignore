@@ -1,0 +1,24 @@
+# Go
+server.exe
+server
+dist/
+
+# Node / Web
+web/node_modules/
+web/.next/
+web/next-env.d.ts
+web/tsconfig.tsbuildinfo
+web/.pnpm-store/
+
+# Runtime data
+data/
+
+# Local config override
+config/config.yaml
+
+# IDE / local settings
+.claude/settings.local.json
+
+# OS
+.DS_Store
+Thumbs.db
