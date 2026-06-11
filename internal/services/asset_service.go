@@ -1,14 +1,14 @@
 package services
 
 import (
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/config"
-	"agent-desk/internal/pkg/dto"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/errorsx"
-	"agent-desk/internal/pkg/utils"
-	"agent-desk/internal/repositories"
-	"agent-desk/internal/services/storage"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/config"
+	"customer-service-system/internal/pkg/dto"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/utils"
+	"customer-service-system/internal/repositories"
+	"customer-service-system/internal/services/storage"
 	"bytes"
 	"io"
 	"mime/multipart"

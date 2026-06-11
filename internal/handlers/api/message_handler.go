@@ -1,16 +1,16 @@
 package api
 
 import (
-	"agent-desk/internal/builders"
-	"agent-desk/internal/pkg/dto/request"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/httpx"
-	"agent-desk/internal/pkg/i18nx"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/builders"
+	"customer-service-system/internal/pkg/dto/request"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/httpx"
+	"customer-service-system/internal/pkg/i18nx"
+	"customer-service-system/internal/services"
 	"strconv"
 	"strings"
 
-	"agent-desk/internal/pkg/httpx/params"
+	"customer-service-system/internal/pkg/httpx/params"
 
 	"github.com/gin-gonic/gin"
 	"github.com/spf13/cast"

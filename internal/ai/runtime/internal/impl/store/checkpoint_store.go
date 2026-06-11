@@ -5,8 +5,8 @@ import (
 	"encoding/base64"
 	"time"
 
-	"agent-desk/internal/models"
-	"agent-desk/internal/repositories"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/repositories"
 
 	"github.com/cloudwego/eino/adk"
 	"github.com/mlogclub/simple/sqls"

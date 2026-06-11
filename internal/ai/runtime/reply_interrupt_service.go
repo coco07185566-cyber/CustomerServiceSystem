@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	applicationruntime "agent-desk/internal/ai/application/runtime"
-	"agent-desk/internal/ai/runtime/graphs"
-	svc "agent-desk/internal/services"
+	applicationruntime "customer-service-system/internal/ai/application/runtime"
+	"customer-service-system/internal/ai/runtime/graphs"
+	svc "customer-service-system/internal/services"
 )
 
 type replyInterruptService struct{}

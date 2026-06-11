@@ -6,12 +6,12 @@ import (
 	"log/slog"
 	"time"
 
-	ragchunk "agent-desk/internal/ai/rag/chunk"
-	"agent-desk/internal/ai/rag/vectordb"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
+	ragchunk "customer-service-system/internal/ai/rag/chunk"
+	"customer-service-system/internal/ai/rag/vectordb"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
 
-	"agent-desk/internal/ai"
+	"customer-service-system/internal/ai"
 )
 
 func (s *index) buildDocumentChunkRequest(document models.KnowledgeDocument, knowledgeBase models.KnowledgeBase) *ragchunk.ChunkRequest {

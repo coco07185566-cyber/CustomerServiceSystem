@@ -3,9 +3,9 @@ package repositories
 import (
 	"time"
 
-	"agent-desk/internal/models"
+	"customer-service-system/internal/models"
 
-	"agent-desk/internal/pkg/httpx/params"
+	"customer-service-system/internal/pkg/httpx/params"
 
 	"github.com/mlogclub/simple/sqls"
 	"gorm.io/gorm"

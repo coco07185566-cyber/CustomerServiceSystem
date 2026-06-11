@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"strings"
 
-	"agent-desk/internal/pkg/dto/request"
-	"agent-desk/internal/pkg/dto/response"
-	"agent-desk/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/dto/request"
+	"customer-service-system/internal/pkg/dto/response"
+	"customer-service-system/internal/pkg/errorsx"
 )
 
 var SkillRuntimeService = newSkillRuntimeService()

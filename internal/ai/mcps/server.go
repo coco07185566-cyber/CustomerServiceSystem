@@ -20,7 +20,7 @@ func NewHTTPHandler() http.Handler {
 
 func newServer() *mcp.Server {
 	server := mcp.NewServer(&mcp.Implementation{
-		Name:       "agent-desk-mcp-server",
+		Name:       "customer-service-system-mcp-server",
 		Title:      "CS Agent MCP Server",
 		Version:    "v1",
 		WebsiteURL: "https://github.com/modelcontextprotocol",

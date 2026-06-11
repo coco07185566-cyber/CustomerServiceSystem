@@ -1,7 +1,7 @@
 package params
 
 import (
-	"agent-desk/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/errorsx"
 	"errors"
 	"fmt"
 	"log/slog"

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log/slog"
 
-	"agent-desk/internal/ai/rag/vectordb"
+	"customer-service-system/internal/ai/rag/vectordb"
 )
 
 func (s *index) ensureCollection(ctx context.Context, provider vectordb.Provider, collectionName string, dimension int) error {

@@ -1,15 +1,15 @@
 package dashboard
 
 import (
-	"agent-desk/internal/pkg/httpx"
+	"customer-service-system/internal/pkg/httpx"
 	"context"
 
-	"agent-desk/internal/ai/rag"
-	"agent-desk/internal/pkg/constants"
-	"agent-desk/internal/pkg/dto/request"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/ai/rag"
+	"customer-service-system/internal/pkg/constants"
+	"customer-service-system/internal/pkg/dto/request"
+	"customer-service-system/internal/services"
 
-	"agent-desk/internal/pkg/httpx/params"
+	"customer-service-system/internal/pkg/httpx/params"
 
 	"github.com/gin-gonic/gin"
 )

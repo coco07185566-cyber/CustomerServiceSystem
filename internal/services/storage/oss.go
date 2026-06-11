@@ -1,9 +1,9 @@
 package storage
 
 import (
-	"agent-desk/internal/pkg/config"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/config"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/errorsx"
 	"fmt"
 	"io"
 	"net/url"

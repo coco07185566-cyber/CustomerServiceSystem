@@ -1,8 +1,8 @@
 package third
 
 import (
-	"agent-desk/internal/pkg/httpx/params"
-	"agent-desk/internal/wxwork"
+	"customer-service-system/internal/pkg/httpx/params"
+	"customer-service-system/internal/wxwork"
 	"io"
 	"net/http"
 

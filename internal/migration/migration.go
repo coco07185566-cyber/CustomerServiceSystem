@@ -1,8 +1,8 @@
 package migration
 
 import (
-	"agent-desk/internal/models"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/services"
 	"errors"
 	"log/slog"
 	"sync"

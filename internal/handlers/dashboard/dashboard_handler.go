@@ -1,11 +1,11 @@
 package dashboard
 
 import (
-	"agent-desk/internal/pkg/httpx"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/pkg/httpx"
+	"customer-service-system/internal/services"
 
-	"agent-desk/internal/pkg/httpx/params"
-	"agent-desk/internal/pkg/i18nx"
+	"customer-service-system/internal/pkg/httpx/params"
+	"customer-service-system/internal/pkg/i18nx"
 
 	"github.com/gin-gonic/gin"
 )

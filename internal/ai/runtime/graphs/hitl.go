@@ -3,7 +3,7 @@ package graphs
 import (
 	"strings"
 
-	"agent-desk/internal/pkg/i18nx"
+	"customer-service-system/internal/pkg/i18nx"
 )
 
 const (

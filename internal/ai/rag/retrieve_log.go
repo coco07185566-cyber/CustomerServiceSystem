@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"time"
 
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/dto"
-	"agent-desk/internal/pkg/dto/response"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/dto"
+	"customer-service-system/internal/pkg/dto/response"
 
 	"github.com/google/uuid"
 	"github.com/mlogclub/simple/sqls"

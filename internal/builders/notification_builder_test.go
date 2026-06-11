@@ -3,8 +3,8 @@ package builders
 import (
 	"testing"
 
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/i18nx"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/i18nx"
 )
 
 func TestBuildNotificationListReturnsEmptySlice(t *testing.T) {

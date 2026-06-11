@@ -5,15 +5,15 @@ import (
 	"strings"
 	"time"
 
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/config"
-	"agent-desk/internal/pkg/dto/response"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/errorsx"
-	"agent-desk/internal/pkg/openidentity"
-	"agent-desk/internal/repositories"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/config"
+	"customer-service-system/internal/pkg/dto/response"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/openidentity"
+	"customer-service-system/internal/repositories"
 
-	"agent-desk/internal/pkg/httpx/params"
+	"customer-service-system/internal/pkg/httpx/params"
 
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v5"

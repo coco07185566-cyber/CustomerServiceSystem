@@ -9,12 +9,12 @@ import (
 	"log/slog"
 	"time"
 
-	"agent-desk/internal/ai"
-	ragchunk "agent-desk/internal/ai/rag/chunk"
-	"agent-desk/internal/ai/rag/vectordb"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/repositories"
+	"customer-service-system/internal/ai"
+	ragchunk "customer-service-system/internal/ai/rag/chunk"
+	"customer-service-system/internal/ai/rag/vectordb"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/repositories"
 
 	"github.com/google/uuid"
 	"github.com/mlogclub/simple/sqls"

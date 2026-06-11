@@ -37,14 +37,14 @@ function createElement(tagName) {
 }
 
 async function loadSdk(config) {
-  const source = await readFile(new URL("./agent-desk-sdk.ts", import.meta.url), "utf8")
+  const source = await readFile(new URL("./customer-service-system-sdk.ts", import.meta.url), "utf8")
   const compiled = ts.transpileModule(source, {
     compilerOptions: {
       target: ts.ScriptTarget.ES2017,
       module: ts.ModuleKind.ESNext,
       importsNotUsedAsValues: ts.ImportsNotUsedAsValues.Remove,
     },
-    fileName: "agent-desk-sdk.ts",
+    fileName: "customer-service-system-sdk.ts",
   })
   const body = createElement("body")
   const sandbox = {
@@ -62,13 +62,13 @@ async function loadSdk(config) {
     document: {
       body,
       currentScript: {
-        src: "https://chat.example/sdk/agent-desk-sdk.min.js",
+        src: "https://chat.example/sdk/customer-service-system-sdk.min.js",
       },
       createElement,
       createElementNS: (_namespace, tagName) => createElement(tagName),
     },
     window: {
-      AgentDeskConfig: config,
+      CustomerServiceSystemConfig: config,
       location: {
         origin: "https://host.example",
       },
@@ -109,10 +109,10 @@ test("getChatUrl resolves a fresh userToken for each call", async () => {
     getUserToken: async () => `token_${++calls}`,
   })
 
-  assert.equal(typeof sandbox.window.AgentDeskWidget.getChatUrl, "function")
+  assert.equal(typeof sandbox.window.CustomerServiceSystemWidget.getChatUrl, "function")
 
-  const first = await sandbox.window.AgentDeskWidget.getChatUrl()
-  const second = await sandbox.window.AgentDeskWidget.getChatUrl()
+  const first = await sandbox.window.CustomerServiceSystemWidget.getChatUrl()
+  const second = await sandbox.window.CustomerServiceSystemWidget.getChatUrl()
 
   assert.equal(new URL(first).pathname, "/support/chat/")
   assert.equal(new URL(second).pathname, "/support/chat/")

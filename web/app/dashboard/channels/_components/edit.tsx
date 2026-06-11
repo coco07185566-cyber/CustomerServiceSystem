@@ -740,11 +740,11 @@ function WebAccessGuide({ channelId }: { channelId: string }) {
       return ""
     }
     return `<script>
-  window.AgentDeskConfig = {
+  window.CustomerServiceSystemConfig = {
     channelId: "${channelId}"
   };
 </script>
-<script async src="${origin}/sdk/agent-desk-sdk.min.js"></script>`
+<script async src="${origin}/sdk/customer-service-system-sdk.min.js"></script>`
   }, [channelId, origin])
 
   async function copyText(text: string, successMessage: string) {

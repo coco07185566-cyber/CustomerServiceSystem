@@ -6,9 +6,9 @@ import (
 	"testing"
 	"time"
 
-	runtimetooling "agent-desk/internal/ai/runtime/tooling"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
+	runtimetooling "customer-service-system/internal/ai/runtime/tooling"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
 
 	"github.com/glebarez/sqlite"
 	"github.com/mlogclub/simple/sqls"

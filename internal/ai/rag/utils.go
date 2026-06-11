@@ -1,7 +1,7 @@
 package rag
 
 import (
-	"agent-desk/internal/pkg/enums"
+	"customer-service-system/internal/pkg/enums"
 	"strings"
 
 	"github.com/yuin/goldmark"

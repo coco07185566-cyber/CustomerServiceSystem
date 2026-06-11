@@ -1,11 +1,11 @@
 package event_handlers
 
 import (
-	"agent-desk/internal/events"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/eventbus"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/events"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/eventbus"
+	"customer-service-system/internal/services"
 	"context"
 	"fmt"
 	"strings"

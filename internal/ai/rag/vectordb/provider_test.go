@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"agent-desk/internal/pkg/config"
+	"customer-service-system/internal/pkg/config"
 )
 
 func TestInitLanceDBWithoutBuildTagReturnsActionableError(t *testing.T) {

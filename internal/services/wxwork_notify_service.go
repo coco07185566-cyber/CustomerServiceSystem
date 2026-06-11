@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	"agent-desk/internal/pkg/config"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/repositories"
-	"agent-desk/internal/wxwork"
+	"customer-service-system/internal/pkg/config"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/repositories"
+	"customer-service-system/internal/wxwork"
 
 	"github.com/mlogclub/simple/common/arrs"
 	"github.com/mlogclub/simple/sqls"

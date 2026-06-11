@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-AgentDesk is an open-source AI Agent customer support system — AI-first replies with knowledge-base RAG, human handoff, ticket workflows, and self-hosted deployment. It is not just an LLM chat box; it is an AI Helpdesk designed around real support operations (conversations, agent workspace, knowledge base, tickets, teams).
+CustomerServiceSystem is an open-source AI Agent customer support system — AI-first replies with knowledge-base RAG, human handoff, ticket workflows, and self-hosted deployment. It is not just an LLM chat box; it is an AI Helpdesk designed around real support operations (conversations, agent workspace, knowledge base, tickets, teams).
 
 ## Commands
 

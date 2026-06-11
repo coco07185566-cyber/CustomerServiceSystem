@@ -1,7 +1,7 @@
 package cronx
 
 import (
-	"agent-desk/internal/services"
+	"customer-service-system/internal/services"
 	"fmt"
 	"log/slog"
 

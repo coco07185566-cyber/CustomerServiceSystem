@@ -1,7 +1,7 @@
 package utils
 
 import (
-	"agent-desk/internal/pkg/enums"
+	"customer-service-system/internal/pkg/enums"
 	"reflect"
 	"testing"
 )

@@ -7,11 +7,11 @@ import (
 	"slices"
 	"strings"
 
-	"agent-desk/internal/ai/mcps"
-	impladapter "agent-desk/internal/ai/runtime/internal/impl/adapter"
-	"agent-desk/internal/ai/runtime/registry"
-	"agent-desk/internal/pkg/i18nx"
-	"agent-desk/internal/pkg/toolx"
+	"customer-service-system/internal/ai/mcps"
+	impladapter "customer-service-system/internal/ai/runtime/internal/impl/adapter"
+	"customer-service-system/internal/ai/runtime/registry"
+	"customer-service-system/internal/pkg/i18nx"
+	"customer-service-system/internal/pkg/toolx"
 
 	einotool "github.com/cloudwego/eino/components/tool"
 	"github.com/cloudwego/eino/schema"

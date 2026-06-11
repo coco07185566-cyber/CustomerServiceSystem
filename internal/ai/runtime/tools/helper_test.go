@@ -3,7 +3,7 @@ package tools
 import (
 	"testing"
 
-	"agent-desk/internal/pkg/toolx"
+	"customer-service-system/internal/pkg/toolx"
 )
 
 func TestNewRuntimeStaticTool(t *testing.T) {

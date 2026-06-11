@@ -3,8 +3,8 @@ package tools
 import (
 	"strings"
 
-	"agent-desk/internal/ai/runtime/registry"
-	"agent-desk/internal/pkg/toolx"
+	"customer-service-system/internal/ai/runtime/registry"
+	"customer-service-system/internal/pkg/toolx"
 )
 
 type Decision string

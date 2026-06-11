@@ -1,6 +1,6 @@
 package skills
 
-import "agent-desk/internal/models"
+import "customer-service-system/internal/models"
 
 // RuntimeContext 表示一次 Skill 运行的输入上下文。
 type RuntimeContext struct {

@@ -1,9 +1,9 @@
 package seeds
 
 import (
-	"agent-desk/cmd/testdata/seedlang"
-	"agent-desk/internal/pkg/dto"
-	"agent-desk/internal/pkg/enums"
+	"customer-service-system/cmd/testdata/seedlang"
+	"customer-service-system/internal/pkg/dto"
+	"customer-service-system/internal/pkg/enums"
 
 	"github.com/mlogclub/simple/common/jsons"
 )
@@ -23,7 +23,7 @@ func ChannelSeeds(lang seedlang.Language) []ChannelSeed {
 				ChannelType: enums.ChannelTypeWeb,
 				ConfigJSON: jsons.ToJsonStr(dto.WebChannelConfig{
 					Title:      "Online Support",
-					Subtitle:   "Powered by AgentDesk",
+					Subtitle:   "Powered by CustomerServiceSystem",
 					ThemeColor: "#2563eb",
 					Position:   "right",
 					Width:      "780px",
@@ -38,7 +38,7 @@ func ChannelSeeds(lang seedlang.Language) []ChannelSeed {
 			ChannelType: enums.ChannelTypeWeb,
 			ConfigJSON: jsons.ToJsonStr(dto.WebChannelConfig{
 				Title:      "在线客服",
-				Subtitle:   "AgentDesk 提供技术支持",
+				Subtitle:   "CustomerServiceSystem 提供技术支持",
 				ThemeColor: "#2563eb",
 				Position:   "right",
 				Width:      "780px",

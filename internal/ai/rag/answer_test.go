@@ -3,9 +3,9 @@ package rag
 import (
 	"testing"
 
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/dto/response"
-	"agent-desk/internal/pkg/enums"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/dto/response"
+	"customer-service-system/internal/pkg/enums"
 )
 
 func TestBuildFallbackAnswer(t *testing.T) {

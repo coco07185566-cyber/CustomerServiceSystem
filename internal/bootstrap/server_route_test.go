@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"agent-desk/internal/pkg/config"
+	"customer-service-system/internal/pkg/config"
 )
 
 func TestNewServerRegistersGinRoutes(t *testing.T) {

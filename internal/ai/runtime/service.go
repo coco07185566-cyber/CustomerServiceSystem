@@ -3,7 +3,7 @@ package runtime
 import (
 	"context"
 
-	applicationruntime "agent-desk/internal/ai/application/runtime"
+	applicationruntime "customer-service-system/internal/ai/application/runtime"
 )
 
 var Service = newService()

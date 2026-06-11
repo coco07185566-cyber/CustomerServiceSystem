@@ -6,11 +6,11 @@ import (
 	"strings"
 	"time"
 
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/errorsx"
-	"agent-desk/internal/pkg/openidentity"
-	"agent-desk/internal/wxwork"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/openidentity"
+	"customer-service-system/internal/wxwork"
 
 	"github.com/mlogclub/simple/common/strs"
 	"github.com/silenceper/wechat/v2/work/kf"

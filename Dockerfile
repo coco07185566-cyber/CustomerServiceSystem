@@ -27,7 +27,7 @@ ARG TARGETARCH
 RUN --mount=type=cache,target=/go/pkg/mod \
 	--mount=type=cache,target=/root/.cache/go-build \
 	CGO_ENABLED=0 GOOS=${TARGETOS} GOARCH=${TARGETARCH} \
-	go build -v -trimpath -ldflags="-s -w" -o /out/agent-desk ./cmd/server
+	go build -v -trimpath -ldflags="-s -w" -o /out/customer-service-system ./cmd/server
 
 FROM golang:1.26-trixie AS server-builder-lancedb
 WORKDIR /src
@@ -70,8 +70,8 @@ RUN --mount=type=cache,target=/go/pkg/mod \
 	CGO_ENABLED=1 GOOS="${TARGETOS}" GOARCH="$arch" \
 	CGO_CFLAGS="-I/src/include" \
 	CGO_LDFLAGS="-L/src/lib/linux_$arch -llancedb_go -Wl,-rpath,/usr/local/lib -lm -ldl -lpthread" \
-	go build -tags lancedb -v -trimpath -ldflags="-s -w" -o /out/agent-desk ./cmd/server; \
-	ldd /out/agent-desk; \
+	go build -tags lancedb -v -trimpath -ldflags="-s -w" -o /out/customer-service-system ./cmd/server; \
+	ldd /out/customer-service-system; \
 	cp "/src/lib/linux_$arch/liblancedb_go.so" /out/liblancedb_go.so
 
 FROM debian:trixie-slim AS app-lancedb
@@ -85,7 +85,7 @@ RUN apt-get update \
 	&& mkdir -p /app/config /app/data/storage /app/data/lancedb \
 	&& rm -rf /var/lib/apt/lists/*
 
-COPY --from=server-builder-lancedb /out/agent-desk /app/agent-desk
+COPY --from=server-builder-lancedb /out/customer-service-system /app/customer-service-system
 COPY --from=server-builder-lancedb /out/liblancedb_go.so /usr/local/lib/liblancedb_go.so
 COPY config/config.example.yaml /app/config/config.example.yaml
 COPY config/config.example.yaml /app/config/config.yaml
@@ -96,7 +96,7 @@ VOLUME ["/app/data"]
 HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \
 	CMD wget -qO- http://127.0.0.1:8083/ >/dev/null || exit 1
 
-CMD ["/app/agent-desk", "-config", "/app/config/config.yaml"]
+CMD ["/app/customer-service-system", "-config", "/app/config/config.yaml"]
 
 FROM alpine:3.22 AS app
 WORKDIR /app
@@ -106,7 +106,7 @@ ENV TZ=Asia/Shanghai
 RUN apk add --no-cache ca-certificates tzdata wget \
 	&& mkdir -p /app/config /app/data/storage
 
-COPY --from=server-builder /out/agent-desk /app/agent-desk
+COPY --from=server-builder /out/customer-service-system /app/customer-service-system
 COPY config/config.example.yaml /app/config/config.example.yaml
 COPY config/config.example.yaml /app/config/config.yaml
 
@@ -116,4 +116,4 @@ VOLUME ["/app/data"]
 HEALTHCHECK --interval=30s --timeout=5s --start-period=20s --retries=3 \
 	CMD wget -qO- http://127.0.0.1:8083/ >/dev/null || exit 1
 
-CMD ["/app/agent-desk", "-config", "/app/config/config.yaml"]
+CMD ["/app/customer-service-system", "-config", "/app/config/config.yaml"]

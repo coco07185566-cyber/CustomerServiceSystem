@@ -3,7 +3,7 @@ package request
 import (
 	"io"
 
-	"agent-desk/internal/pkg/enums"
+	"customer-service-system/internal/pkg/enums"
 )
 
 type CreateKnowledgeBaseRequest struct {

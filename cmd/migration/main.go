@@ -3,9 +3,9 @@ package main
 import (
 	"log/slog"
 
-	"agent-desk/internal/bootstrap"
-	"agent-desk/internal/pkg/config"
-	"agent-desk/internal/pkg/logx"
+	"customer-service-system/internal/bootstrap"
+	"customer-service-system/internal/pkg/config"
+	"customer-service-system/internal/pkg/logx"
 )
 
 func main() {

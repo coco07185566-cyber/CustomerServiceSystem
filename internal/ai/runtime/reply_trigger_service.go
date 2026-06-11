@@ -6,11 +6,11 @@ import (
 	"strings"
 	"time"
 
-	applicationruntime "agent-desk/internal/ai/application/runtime"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/tracex"
-	svc "agent-desk/internal/services"
+	applicationruntime "customer-service-system/internal/ai/application/runtime"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/tracex"
+	svc "customer-service-system/internal/services"
 )
 
 func (s *aiReplyService) resolveReplyTimeout(aiAgent models.AIAgent) time.Duration {

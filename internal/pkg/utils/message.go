@@ -1,10 +1,10 @@
 package utils
 
 import (
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/repositories"
-	"agent-desk/internal/services/storage"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/repositories"
+	"customer-service-system/internal/services/storage"
 	"bytes"
 	"encoding/json"
 	"fmt"

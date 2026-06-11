@@ -1,10 +1,10 @@
 import type {
-  AgentDeskConfig,
-  AgentDeskWidget,
+  CustomerServiceSystemConfig,
+  CustomerServiceSystemWidget,
   SupportChatRuntimeConfig,
 } from "./config-types"
 
-type NormalizedAgentDeskConfig = AgentDeskConfig & {
+type NormalizedCustomerServiceSystemConfig = CustomerServiceSystemConfig & {
   baseUrl: string
   channelId: string
   position: "left" | "right"
@@ -23,7 +23,7 @@ type WidgetState = {
   configLoading: boolean
   frameHideTimer: number | null
   frameDestroyTimer: number | null
-  config: NormalizedAgentDeskConfig | null
+  config: NormalizedCustomerServiceSystemConfig | null
   frameConfig: SupportChatRuntimeConfig | null
   frameUrl: URL | null
   animationDuration: number
@@ -33,7 +33,7 @@ type WidgetState = {
 type WidgetConfigResponse = {
   success?: boolean
   data?: Partial<Pick<
-    AgentDeskConfig,
+    CustomerServiceSystemConfig,
     "title" | "subtitle" | "themeColor" | "position" | "width"
   >>
 }
@@ -57,14 +57,14 @@ function getLauncherText() {
 }
 
 type FrameMessage =
-  | { type: "agent-desk:init"; payload: SupportChatRuntimeConfig }
-  | { type: "agent-desk:open" }
-  | { type: "agent-desk:minimize" }
-  | { type: "agent-desk:maximized"; payload: { isMaximized: boolean } }
+  | { type: "customer-service-system:init"; payload: SupportChatRuntimeConfig }
+  | { type: "customer-service-system:open" }
+  | { type: "customer-service-system:minimize" }
+  | { type: "customer-service-system:maximized"; payload: { isMaximized: boolean } }
 
 (function () {
   const DEFAULT_CONFIG: Pick<
-    NormalizedAgentDeskConfig,
+    NormalizedCustomerServiceSystemConfig,
     "position" | "themeColor" | "width"
   > = {
     position: "right",
@@ -94,7 +94,7 @@ type FrameMessage =
     window.__CS_AI_AGENT_WIDGET_STATE__ = state
   }
 
-  function normalizeConfig(config?: AgentDeskConfig): NormalizedAgentDeskConfig {
+  function normalizeConfig(config?: CustomerServiceSystemConfig): NormalizedCustomerServiceSystemConfig {
     const merged: Record<string, unknown> = { ...DEFAULT_CONFIG, ...(config || {}) }
     merged.baseUrl = String(merged.baseUrl || window.location.origin).replace(/\/$/, "")
     if (merged.apiBaseUrl) {
@@ -109,18 +109,18 @@ type FrameMessage =
     if (typeof merged.getUserToken !== "function") {
       delete merged.getUserToken
     }
-    return merged as NormalizedAgentDeskConfig
+    return merged as NormalizedCustomerServiceSystemConfig
   }
 
-  function resolveWidgetBaseUrl(config: NormalizedAgentDeskConfig) {
+  function resolveWidgetBaseUrl(config: NormalizedCustomerServiceSystemConfig) {
     const currentScript = document.currentScript as HTMLScriptElement | null
     if (currentScript?.src) {
-      return currentScript.src.replace(/\/sdk\/agent-desk-sdk\.min\.js(?:\?.*)?$/, "")
+      return currentScript.src.replace(/\/sdk\/customer-service-system-sdk\.min\.js(?:\?.*)?$/, "")
     }
     return String(config.widgetBaseUrl || config.baseUrl || window.location.origin).replace(/\/$/, "")
   }
 
-  function createFrameUrl(config: NormalizedAgentDeskConfig, userToken: string) {
+  function createFrameUrl(config: NormalizedCustomerServiceSystemConfig, userToken: string) {
     const widgetBaseUrl = resolveWidgetBaseUrl(config)
     const frameUrl = new URL(`${widgetBaseUrl}/support/chat/`)
     frameUrl.searchParams.set("channelId", config.channelId)
@@ -133,7 +133,7 @@ type FrameMessage =
   }
 
   function createFrameConfig(
-    config: NormalizedAgentDeskConfig,
+    config: NormalizedCustomerServiceSystemConfig,
     userToken: string
   ): SupportChatRuntimeConfig {
     const { getUserToken: _getUserToken, ...payload } = config
@@ -169,13 +169,13 @@ type FrameMessage =
   }
 
   function mergeWidgetConfig(
-    config: NormalizedAgentDeskConfig,
+    config: NormalizedCustomerServiceSystemConfig,
     remoteConfig?: WidgetConfigResponse["data"]
   ) {
     if (!remoteConfig) {
       return config
     }
-    const merged: NormalizedAgentDeskConfig = { ...config }
+    const merged: NormalizedCustomerServiceSystemConfig = { ...config }
     const remoteKeys = ["title", "subtitle", "themeColor", "position", "width"] as const
     remoteKeys.forEach((key) => {
       const value = remoteConfig[key]
@@ -186,7 +186,7 @@ type FrameMessage =
     return merged
   }
 
-  function fetchWidgetConfig(config: NormalizedAgentDeskConfig) {
+  function fetchWidgetConfig(config: NormalizedCustomerServiceSystemConfig) {
     const baseUrl = String(config.apiBaseUrl || config.baseUrl || "").replace(/\/$/, "")
     if (!baseUrl || !config.channelId || typeof fetch !== "function") {
       return Promise.resolve(config)
@@ -272,7 +272,7 @@ type FrameMessage =
     try {
       state.frame.contentWindow.postMessage(message, state.frameUrl.origin)
     } catch (error) {
-      console.error("[agent-desk-widget] postMessage failed", error)
+      console.error("[customer-service-system-widget] postMessage failed", error)
     }
   }
 
@@ -284,14 +284,14 @@ type FrameMessage =
     if (!state.initSent) {
       state.initSent = true
       postToFrame({
-        type: "agent-desk:init",
+        type: "customer-service-system:init",
         payload: state.frameConfig || createFrameConfig(state.config, ""),
       })
     }
 
-    postToFrame({ type: state.isOpen ? "agent-desk:open" : "agent-desk:minimize" })
+    postToFrame({ type: state.isOpen ? "customer-service-system:open" : "customer-service-system:minimize" })
     postToFrame({
-      type: "agent-desk:maximized",
+      type: "customer-service-system:maximized",
       payload: { isMaximized: state.isMaximized },
     })
   }
@@ -392,24 +392,24 @@ type FrameMessage =
     }
 
     const data = (event.data || {}) as { type?: string }
-    if (data.type === "agent-desk:ready") {
+    if (data.type === "customer-service-system:ready") {
       state.frameReady = true
       flushFrameState()
       return
     }
 
-    if (data.type === "agent-desk:request-minimize") {
+    if (data.type === "customer-service-system:request-minimize") {
       state.isOpen = false
       syncFrameVisibility()
       return
     }
 
-    if (data.type === "agent-desk:request-close") {
+    if (data.type === "customer-service-system:request-close") {
       destroyFrame()
       return
     }
 
-    if (data.type === "agent-desk:request-toggle-maximize") {
+    if (data.type === "customer-service-system:request-toggle-maximize") {
       state.isMaximized = !state.isMaximized
       syncFrameVisibility()
     }
@@ -491,15 +491,15 @@ type FrameMessage =
     return button
   }
 
-  function mount(config?: AgentDeskConfig) {
-    const rawConfig = config || window.AgentDeskConfig || { channelId: "" }
+  function mount(config?: CustomerServiceSystemConfig) {
+    const rawConfig = config || window.CustomerServiceSystemConfig || { channelId: "" }
     state.config = normalizeConfig(rawConfig)
     const widgetBaseUrl = resolveWidgetBaseUrl(state.config)
     if (!rawConfig.baseUrl) {
       state.config.baseUrl = widgetBaseUrl
     }
     if (!state.config.channelId) {
-      console.error("[agent-desk-widget] channelId is required")
+      console.error("[customer-service-system-widget] channelId is required")
       return
     }
 
@@ -548,11 +548,11 @@ type FrameMessage =
         syncFrameVisibility()
       })
       .catch((error) => {
-        console.error("[agent-desk-widget] open failed", error)
+        console.error("[customer-service-system-widget] open failed", error)
       })
   }
 
-  window.AgentDeskWidget = {
+  window.CustomerServiceSystemWidget = {
     mount,
     destroy,
     open: () => openWidget(),
@@ -562,21 +562,21 @@ type FrameMessage =
     },
     getChatUrl: () => {
       if (!state.config) {
-        mount(window.AgentDeskConfig || { channelId: "" })
+        mount(window.CustomerServiceSystemConfig || { channelId: "" })
       }
       if (!state.config?.channelId) {
         return Promise.reject(new Error("channelId is required"))
       }
       return prepareFrameUrl().then((frameUrl) => frameUrl.toString())
     },
-  } satisfies AgentDeskWidget
+  } satisfies CustomerServiceSystemWidget
 
   if (!state.listenerBound) {
     window.addEventListener("message", handleWindowMessage)
     state.listenerBound = true
   }
 
-  if (window.AgentDeskConfig) {
-    mount(window.AgentDeskConfig)
+  if (window.CustomerServiceSystemConfig) {
+    mount(window.CustomerServiceSystemConfig)
   }
 })()

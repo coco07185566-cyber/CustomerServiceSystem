@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"agent-desk/internal/pkg/config"
+	"customer-service-system/internal/pkg/config"
 
 	"github.com/apache/arrow/go/v17/arrow"
 	"github.com/apache/arrow/go/v17/arrow/array"

@@ -1,8 +1,8 @@
 package seeds
 
 import (
-	"agent-desk/cmd/testdata/seedlang"
-	"agent-desk/internal/pkg/enums"
+	"customer-service-system/cmd/testdata/seedlang"
+	"customer-service-system/internal/pkg/enums"
 )
 
 const AfterSalesEscalationSkillCode = "after_sales_escalation_skill"

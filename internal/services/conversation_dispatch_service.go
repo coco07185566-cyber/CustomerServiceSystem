@@ -10,13 +10,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"agent-desk/internal/events"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/dto"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/eventbus"
-	"agent-desk/internal/pkg/utils"
-	"agent-desk/internal/repositories"
+	"customer-service-system/internal/events"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/dto"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/eventbus"
+	"customer-service-system/internal/pkg/utils"
+	"customer-service-system/internal/repositories"
 
 	"github.com/mlogclub/simple/sqls"
 )

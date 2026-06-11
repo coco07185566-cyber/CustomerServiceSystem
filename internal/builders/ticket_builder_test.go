@@ -4,8 +4,8 @@ import (
 	"testing"
 	"time"
 
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
 )
 
 func TestBuildLightweightTicket(t *testing.T) {

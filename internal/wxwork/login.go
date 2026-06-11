@@ -1,9 +1,9 @@
 package wxwork
 
 import (
-	"agent-desk/internal/pkg/dto/response"
-	"agent-desk/internal/pkg/errorsx"
-	"agent-desk/internal/pkg/i18nx"
+	"customer-service-system/internal/pkg/dto/response"
+	"customer-service-system/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/i18nx"
 	"crypto/hmac"
 	"crypto/rand"
 	"crypto/sha256"

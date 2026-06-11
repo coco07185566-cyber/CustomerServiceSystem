@@ -6,11 +6,11 @@ import (
 	"log/slog"
 	"strings"
 
-	"agent-desk/internal/events"
-	"agent-desk/internal/pkg/dto/request"
-	"agent-desk/internal/pkg/eventbus"
-	"agent-desk/internal/pkg/i18nx"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/events"
+	"customer-service-system/internal/pkg/dto/request"
+	"customer-service-system/internal/pkg/eventbus"
+	"customer-service-system/internal/pkg/i18nx"
+	"customer-service-system/internal/services"
 
 	"github.com/mlogclub/simple/common/strs"
 )

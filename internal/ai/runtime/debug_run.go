@@ -4,14 +4,14 @@ import (
 	"context"
 	"strings"
 
-	applicationruntime "agent-desk/internal/ai/application/runtime"
-	"agent-desk/internal/ai/runtime/graphs"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/dto/request"
-	"agent-desk/internal/pkg/dto/response"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/errorsx"
-	svc "agent-desk/internal/services"
+	applicationruntime "customer-service-system/internal/ai/application/runtime"
+	"customer-service-system/internal/ai/runtime/graphs"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/dto/request"
+	"customer-service-system/internal/pkg/dto/response"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/errorsx"
+	svc "customer-service-system/internal/services"
 )
 
 func init() {

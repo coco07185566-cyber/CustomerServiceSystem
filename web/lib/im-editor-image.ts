@@ -30,15 +30,15 @@ export const MessageImageExtension = Image.extend({
     return ({ node }) => {
       const wrapper = document.createElement("span")
       wrapper.className =
-        "agent-desk-editor-image-wrap relative inline-block max-w-full align-middle"
+        "customer-service-system-editor-image-wrap relative inline-block max-w-full align-middle"
 
       const image = document.createElement("img")
-      image.className = "agent-desk-editor-image"
+      image.className = "customer-service-system-editor-image"
       image.draggable = true
 
       const overlay = document.createElement("span")
       overlay.className =
-        "agent-desk-editor-image-loading pointer-events-none absolute inset-0 hidden items-center justify-center rounded-lg bg-background/55 backdrop-blur-[1px]"
+        "customer-service-system-editor-image-loading pointer-events-none absolute inset-0 hidden items-center justify-center rounded-lg bg-background/55 backdrop-blur-[1px]"
 
       const spinner = document.createElement("span")
       spinner.className =
@@ -115,10 +115,10 @@ export function markEditorImageUploadedByTitle(
   image.setAttribute("data-provider", uploaded.provider)
   image.setAttribute("data-storage-key", uploaded.storageKey)
   image.setAttribute("alt", uploaded.filename || image.getAttribute("alt") || "image")
-  image.classList.remove("agent-desk-editor-image-uploading")
+  image.classList.remove("customer-service-system-editor-image-uploading")
   image.removeAttribute("data-uploading")
   image.removeAttribute("title")
-  setImageUploading(image.closest(".agent-desk-editor-image-wrap"), false)
+  setImageUploading(image.closest(".customer-service-system-editor-image-wrap"), false)
 }
 
 export function setEditorImageUploadingByTitle(editor: Editor, title: string) {
@@ -126,9 +126,9 @@ export function setEditorImageUploadingByTitle(editor: Editor, title: string) {
   if (!image) {
     return
   }
-  image.classList.add("agent-desk-editor-image-uploading")
+  image.classList.add("customer-service-system-editor-image-uploading")
   image.setAttribute("data-uploading", "true")
-  setImageUploading(image.closest(".agent-desk-editor-image-wrap"), true)
+  setImageUploading(image.closest(".customer-service-system-editor-image-wrap"), true)
 }
 
 export function buildSendableEditorHTML(
@@ -223,8 +223,8 @@ function setImageUploading(wrapper: Element | null, uploading: boolean) {
   if (!(wrapper instanceof HTMLElement)) {
     return
   }
-  wrapper.classList.toggle("agent-desk-editor-image-wrap-uploading", uploading)
-  const overlay = wrapper.querySelector<HTMLElement>(".agent-desk-editor-image-loading")
+  wrapper.classList.toggle("customer-service-system-editor-image-wrap-uploading", uploading)
+  const overlay = wrapper.querySelector<HTMLElement>(".customer-service-system-editor-image-loading")
   if (overlay) {
     overlay.classList.toggle("hidden", !uploading)
     overlay.classList.toggle("flex", uploading)

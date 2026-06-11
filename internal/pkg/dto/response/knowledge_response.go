@@ -1,7 +1,7 @@
 package response
 
 import (
-	"agent-desk/internal/pkg/enums"
+	"customer-service-system/internal/pkg/enums"
 	"time"
 )
 

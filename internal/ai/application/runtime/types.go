@@ -1,8 +1,8 @@
 package runtime
 
 import (
-	"agent-desk/internal/ai/runtime/registry"
-	"agent-desk/internal/models"
+	"customer-service-system/internal/ai/runtime/registry"
+	"customer-service-system/internal/models"
 )
 
 type Request struct {

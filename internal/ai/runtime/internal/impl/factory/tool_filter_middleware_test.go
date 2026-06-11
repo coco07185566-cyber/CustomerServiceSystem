@@ -3,8 +3,8 @@ package factory
 import (
 	"testing"
 
-	einocallbacks "agent-desk/internal/ai/runtime/internal/impl/callbacks"
-	"agent-desk/internal/pkg/toolx"
+	einocallbacks "customer-service-system/internal/ai/runtime/internal/impl/callbacks"
+	"customer-service-system/internal/pkg/toolx"
 
 	"github.com/cloudwego/eino/schema"
 )

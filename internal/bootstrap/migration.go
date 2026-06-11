@@ -1,8 +1,8 @@
 package bootstrap
 
 import (
-	"agent-desk/internal/migration"
-	"agent-desk/internal/models"
+	"customer-service-system/internal/migration"
+	"customer-service-system/internal/models"
 
 	"github.com/mlogclub/simple/sqls"
 )

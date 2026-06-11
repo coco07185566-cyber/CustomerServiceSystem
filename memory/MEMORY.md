@@ -1,1 +1,1 @@
-- [AgentDesk 项目概述](project-agentdesk-overview.md) — AI Agent 客服系统核心信息
+- [CustomerServiceSystem 项目概述](project-customer-service-system-overview.md) — AI Agent 客服系统核心信息

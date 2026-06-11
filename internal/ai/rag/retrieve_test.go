@@ -3,7 +3,7 @@ package rag
 import (
 	"testing"
 
-	"agent-desk/internal/models"
+	"customer-service-system/internal/models"
 )
 
 func TestResolveKnowledgeBaseSearchOptionsUsesKnowledgeBaseDefaults(t *testing.T) {

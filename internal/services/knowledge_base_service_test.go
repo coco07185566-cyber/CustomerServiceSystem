@@ -5,10 +5,10 @@ import (
 	"strings"
 	"testing"
 
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/dto/request"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/repositories"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/dto/request"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/repositories"
 
 	"github.com/glebarez/sqlite"
 	"github.com/mlogclub/simple/sqls"

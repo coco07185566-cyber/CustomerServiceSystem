@@ -28,11 +28,11 @@ services:
       - "6333:6333"
       - "6334:6334"
 
-  agent-desk:
+  customer-service-system:
     build:
       context: .
       dockerfile: Dockerfile
-    image: mlogclub/agent-desk:latest
+    image: mlogclub/customer-service-system:latest
     restart: unless-stopped
     depends_on:
       mysql:
@@ -42,12 +42,12 @@ services:
     ports:
       - "8083:8083"
     volumes:
-      - agent-desk-data:/app/data
-      - ./docker/agent-desk.yaml:/app/config/config.yaml:ro
+      - customer-service-system-data:/app/data
+      - ./docker/customer-service-system.yaml:/app/config/config.yaml:ro
     environment:
       TZ: Asia/Shanghai
 
 volumes:
   mysql-data:
   qdrant-data:
-  agent-desk-data:
+  customer-service-system-data:

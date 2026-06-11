@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
-	"agent-desk/internal/ai/runtime/tooling"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/ai/runtime/tooling"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/services"
 
 	"github.com/glebarez/sqlite"
 	"github.com/mlogclub/simple/sqls"

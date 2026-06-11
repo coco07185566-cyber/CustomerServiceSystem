@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
-	"agent-desk/internal/events"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/repositories"
+	"customer-service-system/internal/events"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/repositories"
 
 	"github.com/glebarez/sqlite"
 	"github.com/mlogclub/simple/sqls"

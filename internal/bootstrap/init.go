@@ -1,16 +1,16 @@
 package bootstrap
 
 import (
-	"agent-desk/internal/ai/rag/vectordb"
-	"agent-desk/internal/oidcclient"
-	"agent-desk/internal/pkg/config"
-	"agent-desk/internal/pkg/logx"
-	"agent-desk/internal/services/cronx"
-	"agent-desk/internal/wxwork"
+	"customer-service-system/internal/ai/rag/vectordb"
+	"customer-service-system/internal/oidcclient"
+	"customer-service-system/internal/pkg/config"
+	"customer-service-system/internal/pkg/logx"
+	"customer-service-system/internal/services/cronx"
+	"customer-service-system/internal/wxwork"
 	"context"
 	"log/slog"
 
-	_ "agent-desk/internal/services/event_handlers"
+	_ "customer-service-system/internal/services/event_handlers"
 )
 
 func Init(configPath string) error {

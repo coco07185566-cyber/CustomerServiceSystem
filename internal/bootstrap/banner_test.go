@@ -4,7 +4,7 @@ import (
 	"strings"
 	"testing"
 
-	"agent-desk/internal/pkg/config"
+	"customer-service-system/internal/pkg/config"
 )
 
 func TestRenderBanner(t *testing.T) {

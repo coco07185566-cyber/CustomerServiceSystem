@@ -1,6 +1,6 @@
 package chunk
 
-import "agent-desk/internal/pkg/enums"
+import "customer-service-system/internal/pkg/enums"
 
 type ChunkRequest struct {
 	KnowledgeBaseID int64

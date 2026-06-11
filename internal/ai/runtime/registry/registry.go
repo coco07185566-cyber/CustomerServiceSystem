@@ -3,7 +3,7 @@ package registry
 import (
 	"strings"
 
-	"agent-desk/internal/pkg/toolx"
+	"customer-service-system/internal/pkg/toolx"
 
 	einotool "github.com/cloudwego/eino/components/tool"
 )

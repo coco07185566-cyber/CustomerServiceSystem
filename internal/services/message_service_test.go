@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/openidentity"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/openidentity"
 
 	"github.com/glebarez/sqlite"
 	"github.com/mlogclub/simple/sqls"

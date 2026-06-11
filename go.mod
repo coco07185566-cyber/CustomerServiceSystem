@@ -1,4 +1,4 @@
-module agent-desk
+module customer-service-system
 
 go 1.26.0
 

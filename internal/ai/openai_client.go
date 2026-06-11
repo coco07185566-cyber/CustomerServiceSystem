@@ -7,10 +7,10 @@ import (
 	openai "github.com/openai/openai-go/v3"
 	"github.com/openai/openai-go/v3/option"
 
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/errorsx"
-	"agent-desk/internal/repositories"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/errorsx"
+	"customer-service-system/internal/repositories"
 )
 
 func newOpenAIClient(config models.AIConfig) openai.Client {

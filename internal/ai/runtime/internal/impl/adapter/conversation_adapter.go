@@ -1,6 +1,6 @@
 package adapter
 
-import "agent-desk/internal/models"
+import "customer-service-system/internal/models"
 
 type ConversationSnapshot struct {
 	ID                int64

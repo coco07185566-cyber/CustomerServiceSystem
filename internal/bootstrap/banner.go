@@ -5,7 +5,7 @@ import (
 	"io"
 	"os"
 
-	"agent-desk/internal/pkg/config"
+	"customer-service-system/internal/pkg/config"
 )
 
 func printBanner() {

@@ -3,7 +3,7 @@ package factory
 import (
 	"testing"
 
-	"agent-desk/internal/models"
+	"customer-service-system/internal/models"
 )
 
 func TestBuildMCPToolsSkipsGraphAndBuiltinTools(t *testing.T) {

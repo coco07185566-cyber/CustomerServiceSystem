@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"agent-desk/internal/pkg/httpx"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/pkg/httpx"
+	"customer-service-system/internal/services"
 
 	"github.com/gin-gonic/gin"
 	"github.com/mlogclub/simple/web"

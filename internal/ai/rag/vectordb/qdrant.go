@@ -6,7 +6,7 @@ import (
 
 	"github.com/qdrant/go-client/qdrant"
 
-	"agent-desk/internal/pkg/config"
+	"customer-service-system/internal/pkg/config"
 )
 
 type QdrantProvider struct {

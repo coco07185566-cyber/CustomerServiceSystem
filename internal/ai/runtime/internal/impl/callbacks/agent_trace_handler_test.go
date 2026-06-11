@@ -3,7 +3,7 @@ package callbacks
 import (
 	"testing"
 
-	"agent-desk/internal/pkg/toolx"
+	"customer-service-system/internal/pkg/toolx"
 )
 
 func TestParseGraphToolOutcome(t *testing.T) {

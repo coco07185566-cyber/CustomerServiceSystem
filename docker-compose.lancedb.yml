@@ -19,14 +19,14 @@ services:
       timeout: 5s
       retries: 10
 
-  agent-desk:
+  customer-service-system:
     build:
       context: .
       dockerfile: Dockerfile
       target: app-lancedb
       args:
         LANCEDB_VERSION: v0.1.2
-    image: mlogclub/agent-desk:latest-lancedb
+    image: mlogclub/customer-service-system:latest-lancedb
     restart: unless-stopped
     depends_on:
       mysql:
@@ -34,11 +34,11 @@ services:
     ports:
       - "8083:8083"
     volumes:
-      - agent-desk-data:/app/data
-      - ./docker/agent-desk-lancedb.yaml:/app/config/config.yaml:ro
+      - customer-service-system-data:/app/data
+      - ./docker/customer-service-system-lancedb.yaml:/app/config/config.yaml:ro
     environment:
       TZ: Asia/Shanghai
 
 volumes:
   mysql-data:
-  agent-desk-data:
+  customer-service-system-data:

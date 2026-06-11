@@ -4,12 +4,12 @@ import { SignJWT } from "jose"
 import { CheckIcon, CopyIcon } from "lucide-react"
 import { useEffect, useMemo, useState } from "react"
 
-import type { AgentDeskConfig } from "@/lib/sdk/config-types"
+import type { CustomerServiceSystemConfig } from "@/lib/sdk/config-types"
 import { useI18n } from "@/i18n/provider"
 
-const STORAGE_KEY = "agent-desk-web-widget-test-config"
+const STORAGE_KEY = "customer-service-system-widget-test-config"
 const DEFAULT_JWT_TTL_MINUTES = "30"
-const INITIAL_CONFIG: AgentDeskConfig = {
+const INITIAL_CONFIG: CustomerServiceSystemConfig = {
   channelId: "",
   baseUrl: "",
   apiBaseUrl: "",
@@ -17,7 +17,7 @@ const INITIAL_CONFIG: AgentDeskConfig = {
 
 type AuthMode = "guest" | "jwt"
 
-type WidgetDemoConfig = AgentDeskConfig & {
+type WidgetDemoConfig = CustomerServiceSystemConfig & {
   authMode?: AuthMode
   jwtSecret?: string
   jwtUserId?: string
@@ -53,32 +53,32 @@ function removeMountedWidget() {
     return
   }
 
-  window.AgentDeskWidget?.destroy()
+  window.CustomerServiceSystemWidget?.destroy()
   document
     .querySelectorAll(
-      '[data-agent-desk-widget="launcher"], [data-agent-desk-widget="frame"], [data-agent-desk-widget="script"]'
+      '[data-customer-service-system-widget="launcher"], [data-customer-service-system-widget="frame"], [data-customer-service-system-widget="script"]'
     )
     .forEach((node) => node.remove())
 
-  delete window.AgentDeskConfig
+  delete window.CustomerServiceSystemConfig
   delete window.__CS_AI_AGENT_WIDGET_CONFIG__
   delete window.__CS_AI_AGENT_WIDGET_STATE__
-  delete window.AgentDeskWidget
+  delete window.CustomerServiceSystemWidget
 }
 
-function injectWidget(config: AgentDeskConfig) {
+function injectWidget(config: CustomerServiceSystemConfig) {
   removeMountedWidget()
-  window.AgentDeskConfig = config
+  window.CustomerServiceSystemConfig = config
 
   const script = document.createElement("script")
   script.async = true
-  script.src = `${window.location.origin}/sdk/agent-desk-sdk.min.js`
+  script.src = `${window.location.origin}/sdk/customer-service-system-sdk.min.js`
   script.dataset.agentDeskWidget = "script"
   document.body.appendChild(script)
 }
 
-function buildWidgetConfig(config: WidgetDemoConfig): AgentDeskConfig {
-  const nextConfig: AgentDeskConfig = {
+function buildWidgetConfig(config: WidgetDemoConfig): CustomerServiceSystemConfig {
+  const nextConfig: CustomerServiceSystemConfig = {
     channelId: config.channelId.trim(),
     baseUrl: "",
     apiBaseUrl: "",
@@ -187,8 +187,8 @@ export function SupportWidgetDemo() {
 
   const snippet = useMemo(() => {
     const scriptSrc = origin
-      ? `${origin}/sdk/agent-desk-sdk.min.js`
-      : "/sdk/agent-desk-sdk.min.js"
+      ? `${origin}/sdk/customer-service-system-sdk.min.js`
+      : "/sdk/customer-service-system-sdk.min.js"
 
     const configLines = [`    channelId: "${config.channelId || ""}"`]
     if (config.authMode === "jwt") {
@@ -200,7 +200,7 @@ export function SupportWidgetDemo() {
     }
 
     return `<script>
-  window.AgentDeskConfig = {
+  window.CustomerServiceSystemConfig = {
 ${configLines.join(",\n")}
   };
 </script>
@@ -225,11 +225,11 @@ ${configLines.join(",\n")}
   }
 
   async function handleCopyDirectUrl() {
-    if (!window.AgentDeskWidget || typeof navigator === "undefined") {
+    if (!window.CustomerServiceSystemWidget || typeof navigator === "undefined") {
       return
     }
     try {
-      const url = await window.AgentDeskWidget.getChatUrl()
+      const url = await window.CustomerServiceSystemWidget.getChatUrl()
       setLatestDirectChatUrl(url)
       if (config.authMode === "jwt") {
         setGeneratedToken(new URL(url).searchParams.get("userToken") || "")
@@ -243,11 +243,11 @@ ${configLines.join(",\n")}
   }
 
   async function handleOpenDirectChat() {
-    if (!window.AgentDeskWidget) {
+    if (!window.CustomerServiceSystemWidget) {
       return
     }
     try {
-      const url = await window.AgentDeskWidget.getChatUrl()
+      const url = await window.CustomerServiceSystemWidget.getChatUrl()
       setLatestDirectChatUrl(url)
       if (config.authMode === "jwt") {
         setGeneratedToken(new URL(url).searchParams.get("userToken") || "")

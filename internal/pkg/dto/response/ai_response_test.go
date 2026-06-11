@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	"agent-desk/internal/models"
+	"customer-service-system/internal/models"
 )
 
 func TestBuildAIConfigResponseOmitsAPIKey(t *testing.T) {

@@ -1,11 +1,11 @@
 package services
 
 import (
-	"agent-desk/internal/models"
-	"agent-desk/internal/repositories"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/repositories"
 	"strings"
 
-	"agent-desk/internal/pkg/httpx/params"
+	"customer-service-system/internal/pkg/httpx/params"
 
 	"github.com/mlogclub/simple/sqls"
 )

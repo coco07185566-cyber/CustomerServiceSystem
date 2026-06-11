@@ -4,8 +4,8 @@ import (
 	"context"
 	"fmt"
 
-	"agent-desk/internal/pkg/config"
-	"agent-desk/internal/pkg/enums"
+	"customer-service-system/internal/pkg/config"
+	"customer-service-system/internal/pkg/enums"
 )
 
 var defaultProvider Provider

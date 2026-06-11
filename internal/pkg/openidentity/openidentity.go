@@ -1,13 +1,13 @@
 package openidentity
 
 import (
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/errorsx"
 	"errors"
 	"net/url"
 	"strings"
 
-	"agent-desk/internal/pkg/httpx/params"
+	"customer-service-system/internal/pkg/httpx/params"
 
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v5"

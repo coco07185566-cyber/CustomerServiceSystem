@@ -6,13 +6,13 @@ import (
 	"strings"
 	"time"
 
-	"agent-desk/internal/events"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/errorsx"
-	"agent-desk/internal/pkg/eventbus"
-	"agent-desk/internal/pkg/i18nx"
-	"agent-desk/internal/repositories"
+	"customer-service-system/internal/events"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/eventbus"
+	"customer-service-system/internal/pkg/i18nx"
+	"customer-service-system/internal/repositories"
 
 	"github.com/mlogclub/simple/sqls"
 )

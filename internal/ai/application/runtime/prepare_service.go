@@ -1,6 +1,6 @@
 package runtime
 
-import "agent-desk/internal/ai/runtime/registry"
+import "customer-service-system/internal/ai/runtime/registry"
 
 func newPrepareService(catalog *toolCatalog) *prepareService {
 	return &prepareService{catalog: catalog}

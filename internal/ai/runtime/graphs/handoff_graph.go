@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"strings"
 
-	"agent-desk/internal/ai/runtime/tooling"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/i18nx"
-	"agent-desk/internal/pkg/tracex"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/ai/runtime/tooling"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/i18nx"
+	"customer-service-system/internal/pkg/tracex"
+	"customer-service-system/internal/services"
 
 	componenttool "github.com/cloudwego/eino/components/tool"
 	"github.com/cloudwego/eino/schema"

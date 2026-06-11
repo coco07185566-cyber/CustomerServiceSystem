@@ -1,4 +1,4 @@
-APP := agent-desk
+APP := customer-service-system
 MAIN := ./cmd/server
 WEB_DIR := web
 DIST_DIR := dist

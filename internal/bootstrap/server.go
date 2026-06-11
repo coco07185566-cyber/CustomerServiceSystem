@@ -6,21 +6,21 @@ import (
 	"strings"
 	"time"
 
-	"agent-desk/internal/ai/mcps"
-	_ "agent-desk/internal/ai/runtime"
-	"agent-desk/internal/middleware"
-	"agent-desk/internal/pkg/config"
-	"agent-desk/internal/pkg/ginx"
-	"agent-desk/internal/pkg/httpx"
-	"agent-desk/internal/pkg/i18nx"
-	"agent-desk/internal/pkg/tracex"
-	"agent-desk/internal/services"
-	webspa "agent-desk/web"
+	"customer-service-system/internal/ai/mcps"
+	_ "customer-service-system/internal/ai/runtime"
+	"customer-service-system/internal/middleware"
+	"customer-service-system/internal/pkg/config"
+	"customer-service-system/internal/pkg/ginx"
+	"customer-service-system/internal/pkg/httpx"
+	"customer-service-system/internal/pkg/i18nx"
+	"customer-service-system/internal/pkg/tracex"
+	"customer-service-system/internal/services"
+	webspa "customer-service-system/web"
 
 	"github.com/gin-gonic/gin"
 	"github.com/mlogclub/simple/web"
 
-	_ "agent-desk/internal/services/wx_callback_handlers"
+	_ "customer-service-system/internal/services/wx_callback_handlers"
 )
 
 func NewServer() (*gin.Engine, error) {

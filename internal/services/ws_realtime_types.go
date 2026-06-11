@@ -1,10 +1,10 @@
 package services
 
 import (
-	"agent-desk/internal/pkg/dto"
-	"agent-desk/internal/pkg/dto/response"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/openidentity"
+	"customer-service-system/internal/pkg/dto"
+	"customer-service-system/internal/pkg/dto/response"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/openidentity"
 	"encoding/json"
 	"sync"
 	"sync/atomic"

@@ -1,10 +1,10 @@
 package oidcclient
 
 import (
-	"agent-desk/internal/pkg/config"
-	"agent-desk/internal/pkg/dto/response"
-	"agent-desk/internal/pkg/errorsx"
-	"agent-desk/internal/pkg/i18nx"
+	"customer-service-system/internal/pkg/config"
+	"customer-service-system/internal/pkg/dto/response"
+	"customer-service-system/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/i18nx"
 	"context"
 	"crypto/hmac"
 	"crypto/rand"

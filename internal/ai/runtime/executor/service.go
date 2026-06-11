@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"agent-desk/internal/ai/runtime/internal/impl/callbacks"
-	"agent-desk/internal/ai/runtime/internal/impl/factory"
+	"customer-service-system/internal/ai/runtime/internal/impl/callbacks"
+	"customer-service-system/internal/ai/runtime/internal/impl/factory"
 
 	"github.com/cloudwego/eino/adk"
 	"github.com/google/uuid"

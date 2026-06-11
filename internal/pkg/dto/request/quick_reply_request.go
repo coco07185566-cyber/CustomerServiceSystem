@@ -1,6 +1,6 @@
 package request
 
-import "agent-desk/internal/pkg/enums"
+import "customer-service-system/internal/pkg/enums"
 
 type QuickReplyListRequest struct {
 	GroupName string `json:"groupName"`

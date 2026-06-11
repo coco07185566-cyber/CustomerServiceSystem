@@ -1,20 +1,20 @@
 package services
 
 import (
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/dto"
-	"agent-desk/internal/pkg/dto/request"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/errorsx"
-	"agent-desk/internal/pkg/i18nx"
-	"agent-desk/internal/pkg/utils"
-	"agent-desk/internal/repositories"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/dto"
+	"customer-service-system/internal/pkg/dto/request"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/i18nx"
+	"customer-service-system/internal/pkg/utils"
+	"customer-service-system/internal/repositories"
 	"slices"
 	"strings"
 	"sync"
 	"time"
 
-	"agent-desk/internal/pkg/httpx/params"
+	"customer-service-system/internal/pkg/httpx/params"
 
 	"github.com/mlogclub/simple/sqls"
 	"gorm.io/gorm"

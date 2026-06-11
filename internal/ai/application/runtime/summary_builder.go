@@ -1,7 +1,7 @@
 package runtime
 
 import (
-	"agent-desk/internal/ai/runtime/executor"
+	"customer-service-system/internal/ai/runtime/executor"
 	"strings"
 )
 

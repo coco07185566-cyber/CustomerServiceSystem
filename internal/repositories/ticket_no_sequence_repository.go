@@ -1,11 +1,11 @@
 package repositories
 
 import (
-	"agent-desk/internal/models"
+	"customer-service-system/internal/models"
 	"errors"
 	"time"
 
-	"agent-desk/internal/pkg/httpx/params"
+	"customer-service-system/internal/pkg/httpx/params"
 
 	"github.com/mlogclub/simple/sqls"
 	"gorm.io/gorm"

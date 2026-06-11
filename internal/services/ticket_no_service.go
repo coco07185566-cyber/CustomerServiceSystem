@@ -1,8 +1,8 @@
 package services
 
 import (
-	"agent-desk/internal/models"
-	"agent-desk/internal/repositories"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/repositories"
 	"fmt"
 	"strings"
 	"sync"

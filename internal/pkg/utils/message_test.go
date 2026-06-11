@@ -1,9 +1,9 @@
 package utils
 
 import (
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/config"
-	"agent-desk/internal/pkg/enums"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/config"
+	"customer-service-system/internal/pkg/enums"
 	"strings"
 	"testing"
 	"time"

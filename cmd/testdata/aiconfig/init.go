@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/constants"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/repositories"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/constants"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/repositories"
 
 	"github.com/mlogclub/simple/sqls"
 	"gopkg.in/yaml.v3"

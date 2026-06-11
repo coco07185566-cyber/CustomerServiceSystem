@@ -1,8 +1,8 @@
 package builders
 
 import (
-	"agent-desk/internal/pkg/dto/response"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/pkg/dto/response"
+	"customer-service-system/internal/services"
 	"time"
 )
 

@@ -5,12 +5,12 @@ import (
 	"slices"
 	"strings"
 
-	"agent-desk/internal/ai/mcps"
-	"agent-desk/internal/pkg/config"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/errorsx"
-	"agent-desk/internal/pkg/i18nx"
-	"agent-desk/internal/pkg/toolx"
+	"customer-service-system/internal/ai/mcps"
+	"customer-service-system/internal/pkg/config"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/i18nx"
+	"customer-service-system/internal/pkg/toolx"
 )
 
 var ToolCatalogService = newToolCatalogService()

@@ -7,12 +7,12 @@ import (
 	"strings"
 	"time"
 
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/i18nx"
-	"agent-desk/internal/pkg/utils"
-	"agent-desk/internal/repositories"
-	"agent-desk/internal/wxwork"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/i18nx"
+	"customer-service-system/internal/pkg/utils"
+	"customer-service-system/internal/repositories"
+	"customer-service-system/internal/wxwork"
 
 	"github.com/mlogclub/simple/common/strs"
 	"github.com/mlogclub/simple/sqls"

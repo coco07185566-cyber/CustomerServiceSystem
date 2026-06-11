@@ -3,8 +3,8 @@ package runtime
 import (
 	"context"
 
-	"agent-desk/internal/ai/runtime/executor"
-	"agent-desk/internal/pkg/utils"
+	"customer-service-system/internal/ai/runtime/executor"
+	"customer-service-system/internal/pkg/utils"
 )
 
 type Service struct {

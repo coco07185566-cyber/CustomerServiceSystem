@@ -3,7 +3,7 @@ package factory
 import (
 	"context"
 
-	einostore "agent-desk/internal/ai/runtime/internal/impl/store"
+	einostore "customer-service-system/internal/ai/runtime/internal/impl/store"
 
 	"github.com/cloudwego/eino/adk"
 )

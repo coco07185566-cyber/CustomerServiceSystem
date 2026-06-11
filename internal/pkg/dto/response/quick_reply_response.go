@@ -1,6 +1,6 @@
 package response
 
-import "agent-desk/internal/pkg/enums"
+import "customer-service-system/internal/pkg/enums"
 
 type QuickReplyResponse struct {
 	ID        int64        `json:"id"`

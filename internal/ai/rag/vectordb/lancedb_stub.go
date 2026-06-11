@@ -5,7 +5,7 @@ package vectordb
 import (
 	"fmt"
 
-	"agent-desk/internal/pkg/config"
+	"customer-service-system/internal/pkg/config"
 )
 
 func NewLanceDBProvider(_ *config.LanceDBVectorDBConfig) (Provider, error) {

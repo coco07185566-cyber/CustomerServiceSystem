@@ -1,6 +1,6 @@
 package dto
 
-import "agent-desk/internal/pkg/enums"
+import "customer-service-system/internal/pkg/enums"
 
 type AuthPrincipal struct {
 	UserID      int64

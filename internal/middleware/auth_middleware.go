@@ -1,8 +1,8 @@
 package middleware
 
 import (
-	"agent-desk/internal/pkg/i18nx"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/pkg/i18nx"
+	"customer-service-system/internal/services"
 
 	"github.com/gin-gonic/gin"
 	"github.com/mlogclub/simple/web"

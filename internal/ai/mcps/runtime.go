@@ -4,8 +4,8 @@ import (
 	"context"
 	"strings"
 
-	"agent-desk/internal/pkg/config"
-	"agent-desk/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/config"
+	"customer-service-system/internal/pkg/errorsx"
 )
 
 type RuntimeService struct {

@@ -3,10 +3,10 @@ package executor
 import (
 	"strings"
 
-	"agent-desk/internal/ai/runtime/internal/impl/callbacks"
-	"agent-desk/internal/ai/runtime/tooling"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/toolx"
+	"customer-service-system/internal/ai/runtime/internal/impl/callbacks"
+	"customer-service-system/internal/ai/runtime/tooling"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/toolx"
 
 	"github.com/cloudwego/eino/adk"
 	"github.com/cloudwego/eino/schema"

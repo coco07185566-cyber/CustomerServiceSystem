@@ -1,9 +1,9 @@
 package utils
 
 import (
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/dto"
-	"agent-desk/internal/pkg/errorsx"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/dto"
+	"customer-service-system/internal/pkg/errorsx"
 	"crypto/rand"
 	"strconv"
 	"strings"

@@ -7,8 +7,8 @@ import (
 	"strings"
 	"time"
 
-	"agent-desk/internal/ai"
-	"agent-desk/internal/models"
+	"customer-service-system/internal/ai"
+	"customer-service-system/internal/models"
 
 	"github.com/mlogclub/simple/common/strs"
 )

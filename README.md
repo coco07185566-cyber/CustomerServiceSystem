@@ -1,4 +1,4 @@
-# AgentDesk
+# CustomerServiceSystem
 
 English | [简体中文](README_ZH.md)
 
@@ -74,15 +74,15 @@ The fastest way to try the full stack is Docker Compose:
 docker compose up -d --build
 ```
 
-For the full English setup guide, see [Docker Compose Quick Start](https://agent-desk.huabei.pro/docs/getting-started/docker-compose.html).
+For the full English setup guide, see [Docker Compose Quick Start](https://customer-service-system.huabei.pro/docs/getting-started/docker-compose.html).
 
-To embed customer support on your website, see [Web Widget Integration](https://agent-desk.huabei.pro/docs/integration/web-widget.html).
+To embed customer support on your website, see [Web Widget Integration](https://customer-service-system.huabei.pro/docs/integration/web-widget.html).
 
-To connect OpenAI-compatible model providers, see [Model Provider Configuration](https://agent-desk.huabei.pro/docs/config/model-provider.html).
+To connect OpenAI-compatible model providers, see [Model Provider Configuration](https://customer-service-system.huabei.pro/docs/config/model-provider.html).
 
 Compose starts:
 
-- `agent-desk`: application service on port `8083`
+- `customer-service-system`: application service on port `8083`
 - `mysql`: MySQL 8.4 with the `mysql-data` volume
 - `qdrant`: vector database with the `qdrant-data` volume, ports `6333` / `6334`
 
@@ -257,18 +257,18 @@ flowchart LR
 If you only need to build the application image, prepare MySQL and Qdrant yourself and mount a configuration file:
 
 ```bash
-docker build -t mlogclub/agent-desk .
+docker build -t mlogclub/customer-service-system .
 docker run --rm -p 8083:8083 \
-  -v $(pwd)/docker/agent-desk.yaml:/app/config/config.yaml:ro \
-  -v agent-desk-data:/app/data \
-  mlogclub/agent-desk
+  -v $(pwd)/docker/customer-service-system.yaml:/app/config/config.yaml:ro \
+  -v customer-service-system-data:/app/data \
+  mlogclub/customer-service-system
 ```
 
-Compose uses [docker/agent-desk.yaml](docker/agent-desk.yaml) as the in-container configuration. The application reaches `mysql` and `qdrant` through Docker service names.
+Compose uses [docker/customer-service-system.yaml](docker/customer-service-system.yaml) as the in-container configuration. The application reaches `mysql` and `qdrant` through Docker service names.
 
 ## Open-source Positioning
 
-`AgentDesk` is useful as an open-source foundation for:
+`CustomerServiceSystem` is useful as an open-source foundation for:
 
 - AI customer support systems
 - AI Helpdesk / AI Support Platform projects

@@ -1,7 +1,7 @@
 package chunk
 
 import (
-	"agent-desk/internal/pkg/enums"
+	"customer-service-system/internal/pkg/enums"
 	"crypto/sha256"
 	"encoding/hex"
 	"strings"

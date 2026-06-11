@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"strings"
 
-	"agent-desk/internal/models"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/services"
 )
 
 type AnalyzeConversationInput struct {

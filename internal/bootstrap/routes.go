@@ -1,9 +1,9 @@
 package bootstrap
 
 import (
-	"agent-desk/internal/handlers/api"
-	"agent-desk/internal/handlers/dashboard"
-	"agent-desk/internal/handlers/third"
+	"customer-service-system/internal/handlers/api"
+	"customer-service-system/internal/handlers/dashboard"
+	"customer-service-system/internal/handlers/third"
 
 	"github.com/gin-gonic/gin"
 )

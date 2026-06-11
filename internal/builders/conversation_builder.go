@@ -3,12 +3,12 @@ package builders
 import (
 	"strings"
 
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/dto/response"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/i18nx"
-	"agent-desk/internal/pkg/utils"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/dto/response"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/i18nx"
+	"customer-service-system/internal/pkg/utils"
+	"customer-service-system/internal/services"
 
 	"github.com/mlogclub/simple/sqls"
 )

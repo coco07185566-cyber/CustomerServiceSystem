@@ -1,11 +1,11 @@
 package api
 
 import (
-	"agent-desk/internal/pkg/dto/response"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/errorsx"
-	"agent-desk/internal/pkg/httpx"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/pkg/dto/response"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/httpx"
+	"customer-service-system/internal/services"
 
 	"github.com/gin-gonic/gin"
 )

@@ -1,15 +1,15 @@
 package dashboard
 
 import (
-	"agent-desk/internal/builders"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/constants"
-	"agent-desk/internal/pkg/dto/request"
-	"agent-desk/internal/pkg/dto/response"
-	"agent-desk/internal/pkg/errorsx"
-	"agent-desk/internal/pkg/httpx"
-	"agent-desk/internal/pkg/httpx/params"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/builders"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/constants"
+	"customer-service-system/internal/pkg/dto/request"
+	"customer-service-system/internal/pkg/dto/response"
+	"customer-service-system/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/httpx"
+	"customer-service-system/internal/pkg/httpx/params"
+	"customer-service-system/internal/services"
 
 	"github.com/gin-gonic/gin"
 )

@@ -3,7 +3,7 @@ package toolx
 import (
 	"testing"
 
-	"agent-desk/internal/pkg/i18nx"
+	"customer-service-system/internal/pkg/i18nx"
 )
 
 func TestResolveToolMetadata(t *testing.T) {

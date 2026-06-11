@@ -1,12 +1,12 @@
 package api
 
 import (
-	"agent-desk/internal/pkg/config"
-	"agent-desk/internal/pkg/dto/request"
-	"agent-desk/internal/pkg/dto/response"
-	"agent-desk/internal/pkg/httpx"
-	"agent-desk/internal/pkg/httpx/params"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/pkg/config"
+	"customer-service-system/internal/pkg/dto/request"
+	"customer-service-system/internal/pkg/dto/response"
+	"customer-service-system/internal/pkg/httpx"
+	"customer-service-system/internal/pkg/httpx/params"
+	"customer-service-system/internal/services"
 	"net/http"
 	"net/url"
 	"strings"

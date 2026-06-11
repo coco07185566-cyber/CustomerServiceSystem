@@ -6,10 +6,10 @@ import (
 	"strings"
 	"time"
 
-	applicationruntime "agent-desk/internal/ai/application/runtime"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/toolx"
-	svc "agent-desk/internal/services"
+	applicationruntime "customer-service-system/internal/ai/application/runtime"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/toolx"
+	svc "customer-service-system/internal/services"
 )
 
 func newReplyRunLogService() *replyRunLogService {

@@ -1,9 +1,9 @@
 package builders
 
 import (
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/dto/response"
-	"agent-desk/internal/pkg/utils"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/dto/response"
+	"customer-service-system/internal/pkg/utils"
 	"time"
 )
 

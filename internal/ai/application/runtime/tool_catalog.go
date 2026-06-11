@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"strings"
 
-	"agent-desk/internal/ai/runtime/registry"
-	"agent-desk/internal/ai/runtime/tools"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/toolx"
+	"customer-service-system/internal/ai/runtime/registry"
+	"customer-service-system/internal/ai/runtime/tools"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/toolx"
 )
 
 type toolCatalog struct {

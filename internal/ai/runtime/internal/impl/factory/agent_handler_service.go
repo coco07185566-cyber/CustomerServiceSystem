@@ -4,11 +4,11 @@ import (
 	"context"
 	"strings"
 
-	einocallbacks "agent-desk/internal/ai/runtime/internal/impl/callbacks"
-	"agent-desk/internal/ai/runtime/registry"
-	runtimetooling "agent-desk/internal/ai/runtime/tooling"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/toolx"
+	einocallbacks "customer-service-system/internal/ai/runtime/internal/impl/callbacks"
+	"customer-service-system/internal/ai/runtime/registry"
+	runtimetooling "customer-service-system/internal/ai/runtime/tooling"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/toolx"
 
 	"github.com/cloudwego/eino/adk"
 	einotoolsearch "github.com/cloudwego/eino/adk/middlewares/dynamictool/toolsearch"

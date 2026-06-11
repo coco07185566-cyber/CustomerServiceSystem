@@ -3,7 +3,7 @@ package builders
 import (
 	"testing"
 
-	"agent-desk/internal/pkg/i18nx"
+	"customer-service-system/internal/pkg/i18nx"
 )
 
 func TestLocalizeConversationSummary(t *testing.T) {

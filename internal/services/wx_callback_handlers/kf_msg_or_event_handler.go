@@ -1,8 +1,8 @@
 package wx_callback_handlers
 
 import (
-	"agent-desk/internal/services"
-	"agent-desk/internal/wxwork"
+	"customer-service-system/internal/services"
+	"customer-service-system/internal/wxwork"
 	"log/slog"
 
 	"github.com/silenceper/wechat/v2/work/kf"

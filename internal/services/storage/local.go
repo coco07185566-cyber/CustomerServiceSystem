@@ -1,8 +1,8 @@
 package storage
 
 import (
-	"agent-desk/internal/pkg/config"
-	"agent-desk/internal/pkg/enums"
+	"customer-service-system/internal/pkg/config"
+	"customer-service-system/internal/pkg/enums"
 	"io"
 	"os"
 	"path/filepath"

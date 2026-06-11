@@ -1,11 +1,11 @@
 ---
 name: project-agentdesk-overview
-description: AgentDesk 项目核心信息 — AI Agent 客服系统，Go + Next.js，自托管
+description: CustomerServiceSystem 项目核心信息 — AI Agent 客服系统，Go + Next.js，自托管
 metadata:
   type: project
 ---
 
-AgentDesk 是一个开源的 AI Agent 客服系统，位于 `D:\vibe_code\newCustomer\CustomerServiceSystem`。
+CustomerServiceSystem 是一个开源的 AI Agent 客服系统，位于 `D:\vibe_code\newCustomer\CustomerServiceSystem`。
 
 **技术栈**：Go (Gin+GORM) + Next.js 16 (React 19, shadcn/ui, Tailwind CSS) + SQLite/MySQL + Qdrant 向量数据库
 

@@ -1,6 +1,6 @@
 package seeds
 
-import "agent-desk/cmd/testdata/seedlang"
+import "customer-service-system/cmd/testdata/seedlang"
 
 type AgentUserSeed struct {
 	Username string

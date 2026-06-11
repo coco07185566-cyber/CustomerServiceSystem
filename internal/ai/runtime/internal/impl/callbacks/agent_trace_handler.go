@@ -6,9 +6,9 @@ import (
 	"strings"
 	"time"
 
-	impladapter "agent-desk/internal/ai/runtime/internal/impl/adapter"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/toolx"
+	impladapter "customer-service-system/internal/ai/runtime/internal/impl/adapter"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/toolx"
 
 	einotool "github.com/cloudwego/eino/components/tool"
 

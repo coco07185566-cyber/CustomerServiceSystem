@@ -1,9 +1,9 @@
 package api
 
 import (
-	"agent-desk/internal/pkg/httpx"
-	"agent-desk/internal/pkg/openidentity"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/pkg/httpx"
+	"customer-service-system/internal/pkg/openidentity"
+	"customer-service-system/internal/services"
 
 	"github.com/gin-gonic/gin"
 )

@@ -5,11 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/dto"
-	"agent-desk/internal/pkg/dto/request"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/services"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/dto"
+	"customer-service-system/internal/pkg/dto/request"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/services"
 
 	"github.com/glebarez/sqlite"
 	"github.com/mlogclub/simple/sqls"

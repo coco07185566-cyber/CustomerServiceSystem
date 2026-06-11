@@ -6,7 +6,7 @@ import (
 	"context"
 	"testing"
 
-	"agent-desk/internal/pkg/config"
+	"customer-service-system/internal/pkg/config"
 )
 
 func TestLanceDBProviderVectorLifecycle(t *testing.T) {

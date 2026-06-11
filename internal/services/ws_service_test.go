@@ -3,7 +3,7 @@ package services
 import (
 	"testing"
 
-	"agent-desk/internal/pkg/dto/response"
+	"customer-service-system/internal/pkg/dto/response"
 )
 
 func TestWsNotificationTopic(t *testing.T) {

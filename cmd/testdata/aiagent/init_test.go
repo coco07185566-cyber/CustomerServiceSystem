@@ -1,8 +1,8 @@
 package aiagent
 
 import (
-	"agent-desk/cmd/testdata/seedlang"
-	"agent-desk/cmd/testdata/seeds"
+	"customer-service-system/cmd/testdata/seedlang"
+	"customer-service-system/cmd/testdata/seeds"
 	"regexp"
 	"testing"
 )

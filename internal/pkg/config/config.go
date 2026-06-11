@@ -1,7 +1,7 @@
 package config
 
 import (
-	"agent-desk/internal/pkg/enums"
+	"customer-service-system/internal/pkg/enums"
 	"fmt"
 	"os"
 

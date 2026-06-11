@@ -1,8 +1,8 @@
 package seeds
 
 import (
-	"agent-desk/cmd/testdata/seedlang"
-	"agent-desk/internal/pkg/enums"
+	"customer-service-system/cmd/testdata/seedlang"
+	"customer-service-system/internal/pkg/enums"
 )
 
 type QuickReplySeed struct {
@@ -17,7 +17,7 @@ type QuickReplySeed struct {
 func QuickReplySeeds(lang seedlang.Language) []QuickReplySeed {
 	if lang == seedlang.English {
 		return []QuickReplySeed{
-			{ID: 1, GroupName: "New Visitor Reception", Title: "First contact greeting", Content: "Hello, welcome to AgentDesk support. I am the consultant assisting you today. Tell me what product, pricing, or integration option you want to learn about, and I will help you assess it quickly.", Status: enums.StatusOk, SortNo: 100},
+			{ID: 1, GroupName: "New Visitor Reception", Title: "First contact greeting", Content: "Hello, welcome to CustomerServiceSystem support. I am the consultant assisting you today. Tell me what product, pricing, or integration option you want to learn about, and I will help you assess it quickly.", Status: enums.StatusOk, SortNo: 100},
 			{ID: 2, GroupName: "Product Inquiry", Title: "Product capability overview", Content: "We currently support AI Q&A, knowledge base retrieval, human handoff, tag management, quick replies, and agent workspace administration. If you already have a business scenario, I can break down a solution for that scenario.", Status: enums.StatusOk, SortNo: 95},
 			{ID: 3, GroupName: "Product Inquiry", Title: "Deployment options", Content: "The system supports both private deployment and cloud deployment. If you have strong data compliance requirements, evaluate private deployment first. If you want to launch quickly, start with the cloud version.", Status: enums.StatusOk, SortNo: 90},
 			{ID: 4, GroupName: "Quotation Follow-up", Title: "Information before quotation", Content: "To prepare an accurate quote, please share the expected number of agent seats, average daily conversation volume, whether a knowledge base is needed, and whether private deployment is required. I will organize the information and follow up quickly.", Status: enums.StatusOk, SortNo: 85},
@@ -30,7 +30,7 @@ func QuickReplySeeds(lang seedlang.Language) []QuickReplySeed {
 		}
 	}
 	return []QuickReplySeed{
-		{ID: 1, GroupName: "新客接待", Title: "首次接入欢迎语", Content: "您好，欢迎来到 AgentDesk 客服中心，我是今天为您服务的顾问。您可以直接告诉我您想了解的产品、价格或接入方式，我这边先帮您快速判断。", Status: enums.StatusOk, SortNo: 100},
+		{ID: 1, GroupName: "新客接待", Title: "首次接入欢迎语", Content: "您好，欢迎来到 CustomerServiceSystem 客服中心，我是今天为您服务的顾问。您可以直接告诉我您想了解的产品、价格或接入方式，我这边先帮您快速判断。", Status: enums.StatusOk, SortNo: 100},
 		{ID: 2, GroupName: "产品咨询", Title: "产品能力概览", Content: "我们当前支持智能问答、知识库检索、会话转人工、标签体系、快捷回复和客服工作台管理。如果您已经有业务场景，我可以按场景给您拆方案。", Status: enums.StatusOk, SortNo: 95},
 		{ID: 3, GroupName: "产品咨询", Title: "部署方式说明", Content: "系统支持私有化部署和云端部署两种方式。若您对数据合规要求较高，建议优先评估私有化；如果希望快速上线，可以先从云端版本开始。", Status: enums.StatusOk, SortNo: 90},
 		{ID: 4, GroupName: "报价跟进", Title: "报价前信息收集", Content: "为了给您更准确的报价，麻烦提供一下预计坐席人数、日均会话量、是否需要知识库和是否有私有化部署需求，我整理后尽快给您反馈。", Status: enums.StatusOk, SortNo: 85},

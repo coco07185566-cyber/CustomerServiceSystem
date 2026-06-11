@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"log/slog"
 
-	"agent-desk/internal/ai/rag/vectordb"
-	"agent-desk/internal/models"
-	"agent-desk/internal/repositories"
+	"customer-service-system/internal/ai/rag/vectordb"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/repositories"
 
 	"github.com/mlogclub/simple/common/strs"
 	"github.com/mlogclub/simple/sqls"

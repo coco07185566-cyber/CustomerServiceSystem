@@ -1,7 +1,7 @@
 package migration
 
 import (
-	"agent-desk/internal/models"
+	"customer-service-system/internal/models"
 
 	"github.com/mlogclub/simple/sqls"
 )

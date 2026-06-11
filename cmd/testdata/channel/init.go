@@ -1,11 +1,11 @@
 package channel
 
 import (
-	"agent-desk/cmd/testdata/seedlang"
-	"agent-desk/cmd/testdata/seeds"
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/repositories"
+	"customer-service-system/cmd/testdata/seedlang"
+	"customer-service-system/cmd/testdata/seeds"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/repositories"
 	"fmt"
 	"time"
 

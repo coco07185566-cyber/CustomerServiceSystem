@@ -1,7 +1,7 @@
 package errorsx
 
 import (
-	"agent-desk/internal/pkg/i18nx"
+	"customer-service-system/internal/pkg/i18nx"
 
 	"github.com/mlogclub/simple/web"
 )

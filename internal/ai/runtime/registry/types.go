@@ -1,9 +1,9 @@
 package registry
 
 import (
-	"agent-desk/internal/models"
-	"agent-desk/internal/pkg/enums"
-	"agent-desk/internal/pkg/toolx"
+	"customer-service-system/internal/models"
+	"customer-service-system/internal/pkg/enums"
+	"customer-service-system/internal/pkg/toolx"
 
 	einotool "github.com/cloudwego/eino/components/tool"
 )

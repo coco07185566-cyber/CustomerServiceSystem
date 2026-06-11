@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"agent-desk/internal/pkg/config"
+	"customer-service-system/internal/pkg/config"
 
 	"github.com/mlogclub/simple/sqls"
 	"gorm.io/driver/mysql"

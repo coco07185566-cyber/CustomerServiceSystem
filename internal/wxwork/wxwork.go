@@ -1,7 +1,7 @@
 package wxwork
 
 import (
-	"agent-desk/internal/pkg/config"
+	"customer-service-system/internal/pkg/config"
 	"strings"
 
 	"github.com/silenceper/wechat/v2/cache"

@@ -1,8 +1,8 @@
 package httpx
 
 import (
-	"agent-desk/internal/pkg/errorsx"
-	"agent-desk/internal/pkg/i18nx"
+	"customer-service-system/internal/pkg/errorsx"
+	"customer-service-system/internal/pkg/i18nx"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

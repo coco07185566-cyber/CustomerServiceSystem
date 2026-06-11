@@ -1,8 +1,8 @@
 package storage
 
 import (
-	"agent-desk/internal/pkg/dto"
-	"agent-desk/internal/pkg/enums"
+	"customer-service-system/internal/pkg/dto"
+	"customer-service-system/internal/pkg/enums"
 )
 
 type UploadInfo struct {
